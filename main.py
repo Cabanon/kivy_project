@@ -67,14 +67,14 @@ class DMQHGame(AnchorLayout):
             return True
         zero_index = [i for i in range(16) if self.tiles[i] == 0]
         if zero_index == []:
-            content = Button(text='Recommencer')
+            content = Button(text='Cliquez pour recommencer')
             popup = Popup(title = 'Perdu !', content=content,size_hint=(None, None), size=(400, 400), auto_dismiss=False)
             content.bind(on_press=popup.dismiss)
             popup.open()
             self.start()
             return True
         if 2048 in self.tiles:
-            content = Button(text='Recommencer')
+            content = Button(text='Cliquez pour recommencer')
             popup = Popup(title='Gagné !', content=content, size_hint=(None, None), size=(400, 400), auto_dismiss=False)
             content.bind(on_press=popup.dismiss)
             popup.open()
