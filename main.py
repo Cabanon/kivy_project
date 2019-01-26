@@ -129,4 +129,3 @@ def concatenate(line):
             line.pop(i+1)
             line.append(0)
     return line
-
